@@ -1,0 +1,203 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 20-mar-2018, 11.16.23
+    Author     : Sary
+*/
+
+*
+{
+    box-sizing: border-box;
+}
+ 
+body
+{
+    font-family: "Palatino Linotype","Book Antiqua", Palatino, serif;
+    color: white;
+    background: #333333;
+}
+
+h1, h2, h3
+{
+    color: #33ff33;
+}
+
+#maintitle 
+{
+    color: white;
+    display: inline;
+}
+
+input
+{
+    background: orange;
+}
+
+
+input:focus
+{
+    background: gray;
+    color: red;
+}
+
+a:link
+{
+    font-style: italic;
+    color: white;
+}
+
+a:visited
+{
+    color: dodgerblue;
+}
+
+.headerrow
+{
+    background: #33ff33;
+    font-weight: bold;
+    color: black;
+}
+
+.evenrow
+{
+    background: orange;
+    color: black;
+}
+
+li > ol 
+{
+    list-style-type: upper-roman;
+}
+
+article > h3
+{
+    color: aquamarine;
+}
+
+a[href="http://www.google.com"]
+{
+    color: blue;
+}
+
+#logo
+{
+   display: inline; 
+   width: 100px;
+   height: auto;
+}
+
+.navbar
+{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    position:relative;
+}
+
+nav li
+{
+    display: inline-block;
+    border-style:ridge;
+    border-radius: 10px;
+    border-color: white;
+    width: 30%;
+    margin: 0px;
+    padding-left: 10px;
+    padding-right:10px;
+}
+
+nav li:last-child
+{
+    border-radius: 10px;
+    border-color: white;
+}
+
+nav h3
+{
+    display:none;
+}
+
+#div-search
+{
+   display: inline; 
+   float: left;
+   border-style: solid;
+   border-color: white;
+   width: 20%;
+}
+
+#search
+{
+    width: 100%;
+}
+
+#div-nav
+{
+    display: inline;
+    float: left;
+    width: 80%;
+    padding: 0px;
+}
+
+.left-box
+{
+    display: inline;
+    float: left;
+    width: 20%;
+    height: 600px;
+    border-style: solid;
+    border-color: white;
+    margin: 0px;
+    clear: left;
+}
+
+.main-box
+{
+    display: inline;
+    float: left;
+    border-style: solid;
+    border-color: white;
+    width:80%;
+    height: 600px;
+}
+
+footer
+{
+   clear: both;
+   background-color:darkblue;
+   text-align: center;
+}
+
+
+@media screen and (min-width: 300px)
+{
+    #maintitle
+    {
+        color: blue;
+    }
+}
+
+@media screen and (min-width: 400px)
+{
+    #maintitle
+    {
+        color: red;
+    }
+}
+
+.form-left{
+    float:left;
+}
+
+.form-right{
+    float:right;
+}
+
+.form{
+    border: 2px solid white;
+    width: 40%;
+}
