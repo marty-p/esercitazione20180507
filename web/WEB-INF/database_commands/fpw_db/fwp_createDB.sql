@@ -75,3 +75,20 @@ create table registro(
     data_fine date,
     primary key (id_libro, id_iscritto, data_inizio)
 );
+
+insert into libro values (default, "libro1", "autore1", "casa1");
+insert into iscritto values (default, "iscritto1", "cognome1", "email1@email.com", "residenza1", 0, 0);
+
+/*select * from iscritto;*/
+
+insert into biblioteca(nome) values("nome1");
+
+/*select * from biblioteca;*/
+
+insert into iscrizione values(1, 1, '2018-05-08');
+/*delete from iscritto;*/
+
+select biblioteca.nome, iscritto.nome, iscrizione.data_iscrizione
+    from biblioteca, iscritto, iscrizione
+    where biblioteca.id = iscrizione.id_biblioteca
+        and iscritto.id = iscrizione.id_iscritto;
